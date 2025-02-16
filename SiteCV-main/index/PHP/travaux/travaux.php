@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Maxime Derènes | Hobbys</title>
+    <title>Maxime Derènes | Travaux</title>
 
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
@@ -47,9 +47,9 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="../travaux/travaux.php">Mes travaux</a></li>
-                                <li><a class="dropdown-item text-danger" href="../projets/projets.php">Mes Hobbys &nbsp
-                                        <i class="fa-solid fa-location-arrow"></i></a></li>
+                                <li><a class="dropdown-item text-danger" href="#top">Mes travaux &nbsp <i
+                                            class="fa-solid fa-location-arrow"></i></a></li>
+                                <li><a class="dropdown-item" href="../projets/projets.php">Mes Hobbys</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -82,9 +82,8 @@
                     <ul class="list-unstyled">
                         <li><a href="../MAXIMECV.php" class="text-white text-decoration-none">Accueil</a></li>
                         <li><a href="../moi/moi.php" class="text-white text-decoration-none">Qui suis-je ?</a></li>
-                        <li><a href="../travaux/travaux.php" class="text-white text-decoration-none">Mes travaux</a>
-                        </li>
-                        <li><a href="#top" class="text-white text-decoration-none">Mes hobbys</a></li>
+                        <li><a href="#top" class="text-white text-decoration-none">Mes travaux</a></li>
+                        <li><a href="../projets/projets.php" class="text-white text-decoration-none">Mes hobbys</a></li>
                         <li><a href="../cvcontact/cvcontact.php" class="text-white text-decoration-none">CV & Fiche
                                 Contact</a></li>
                     </ul>

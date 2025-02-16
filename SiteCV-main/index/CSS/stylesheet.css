@@ -4,12 +4,21 @@ html{
 
 }
 
+body {
+    background: linear-gradient(to bottom right, rgb(142, 97, 97), gray) !important;
+}
+
 .navbar {
-    background-color: rgb(0, 0, 0);
-    margin-top: auto;
+    background-color: #0000004f;
+    display: flex;
+    flex-direction: row;
 }
 
-.enbas  {
-
+.navbar h1{
+    text-align: left;
 }
 
+.navbar li{
+    text-align: center;
+    justify-content: center;
+}
