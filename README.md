@@ -9,4 +9,6 @@ Ce site mettra en valeur mes connaissances et des projets sur lequels j'ai déj�
 - Mes plus gros projets ,
 - Mon CV ,
 
-:)
+réalisé en : HTML , CSS , PHP , JAVASCRIPT, BOOTSTRAP
+
+Je suis actuellement entrain d'abandonner l'idée d'utiliser du boostrap et donc je vais peut être refaire seulement avec du HTML CSS JAVASCRIPT 
