@@ -193,3 +193,31 @@ body {
         font-size: 18px;
     }
 }
+
+.Présentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    background-color: white;
+
+}
+
+.description p{
+    font-family: "Arial", serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.description h1{
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+
