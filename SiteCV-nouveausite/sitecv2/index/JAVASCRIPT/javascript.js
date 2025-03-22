@@ -13,12 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", function (e) {
-            if (this.getAttribute("href") === "#top") {
+            const href = this.getAttribute("href");
+            if (href === "#top") {
                 e.preventDefault(); 
                 window.scrollTo({ top: 0, behavior: "smooth" }); 
+            } else if (href.startsWith("mailto:")) {
+                
             } else {
                 e.preventDefault(); 
-                const href = this.href;
                 document.body.style.opacity = 0;
                 document.body.style.transform = "ease-in-out"; 
                 setTimeout(() => {
@@ -37,3 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         element.style.opacity = 1;
     });
 });
+
+function playclickSound() {
+    const clickSound = document.getElementById('clickSound');
+    clickSound.play();
+}

@@ -222,6 +222,7 @@ hr {
 }
 
 .cadretext {
+
     margin-top: auto;
     margin-bottom: auto;
     background-color: #f2f2f2;
@@ -404,8 +405,6 @@ hr {
 }
   
 .descriptionmoi2 {
-
-
     --color: rgba(114, 114, 114, 0.3);
     background-color: #191a1a;
     background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
@@ -414,12 +413,52 @@ hr {
 
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+    gap: 20px;
     border: white 1px solid;
     box-shadow: 0 0 0 2px #2f3364;
     margin-left: 2%;
     margin-right: 2%;
     padding: 2%;
+}
+
+.photomoi img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.descriptiontexte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.descriptiontexte h1 {
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+    color: white;
+    text-align: left;
+}
+
+.descriptiontexte p {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 1.6em; 
+    color: white;
+    text-align: left; 
+}
+
+.annoydog img{
+    margin-top: 1%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
 }
 
 @media (max-width: 1050px) {
