@@ -3,12 +3,13 @@ Un site pour mon CV en ligne.
 
 Ce site mettra en valeur mes connaissances et des projets sur lequels j'ai déjà pu travailler.
 
-4 Rubriques :
-- Fiche de contact ,
+3 Rubriques :
 - Mes Hobbys ,
 - Mes plus gros projets ,
 - Mon CV ,
 
-réalisé en : HTML , CSS , PHP , JAVASCRIPT, BOOTSTRAP
+réalisé en : HTML , CSS , PHP , JAVASCRIPT
 
-Je suis actuellement entrain d'abandonner l'idée d'utiliser du boostrap et donc je vais peut être refaire seulement avec du HTML CSS JAVASCRIPT 
+11/03 : bootstrap abandonné, javascript centralisé dans un seul dossier, header et footer finit et toute les pages sont connectés ensemble
+
+22/03 : Rajout d'animations, de backgrounds, de boutons, essaie de plusieurs interaction avec du Javascript, ajout d'une animation pendant le changement des pages.
