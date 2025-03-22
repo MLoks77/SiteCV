@@ -2,6 +2,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: #12142b;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(59, 46, 107, 0.75), rgba(0, 0, 0, 0));
+}
+
+.extra-space {
+    height: 50px; /* Adjust height as needed to create extra space */
 }
 
 .source-code-pro-big {
@@ -15,6 +28,12 @@ body {
     font-weight: 600;
     font-style: normal;
 }
+
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .top a {
     font-family: "Big Shoulders Inline", sans-serif;
@@ -33,7 +52,7 @@ body {
 .top a:hover {
     border:#1b1b1b solid ;
     border-radius: 5%;
-    box-shadow: 2px 2px #1b1b1b;
+    box-shadow: 2px 2px #080808;
     border-width: 1px;
     font-size: 29px;
     transition: 0.3s ease-in-out;
