@@ -1,22 +1,22 @@
-_**SiteCV MAXIME DERENES :**_
+<h1>SiteCV MAXIME DERENES :</h1>
 
 Un site pour mon CV en ligne. <br>
 Ce site mettra en valeur mes connaissances et des projets sur lequels j'ai déjà pu travailler.
 
-_**3 Rubriques**_
+<h2>3 Rubriques</h2>
 
 Mes Hobbys ,
 Mes plus gros projets ,
 Mon CV ;
 
-_**réalisé en**_
+<h2>réalisé en</h2>
 
 - HTML ,
 - CSS ,
 - PHP ,
 - JAVASCRIPT;
 
-_**HISTORIQUE**_
+<h2>HISTORIQUE</h2>
 
 11/03 : bootstrap abandonné, javascript centralisé dans un seul dossier, header et footer finit et toute les pages sont connectés ensemble<br>
 
