@@ -17,6 +17,17 @@ hr {
     height: 50px;
 }
 
+.lazy-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.lazy-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .source-code-pro-big {
     font-family: "Source Code Pro", monospace;
     font-weight: 600;
@@ -642,5 +653,16 @@ hr {
     .contenu-texte2 .btn {
         gap: 10px;
         font-size: 0.9rem;
+    }
+
+    .descriptiontexte p {
+        font-size: 1.2em; 
+    }
+    .descriptiontexte h1 {
+        font-size: 2em;
+    }
+    .photomoi img {
+        max-width: 100%; 
+        height: auto;
     }
 }
