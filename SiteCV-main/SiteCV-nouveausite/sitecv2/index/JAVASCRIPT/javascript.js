@@ -44,3 +44,22 @@ function playclickSound() {
     const clickSound = document.getElementById('clickSound');
     clickSound.play();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const lazySections = document.querySelectorAll('.lazy-section');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the section is visible
+    });
+
+    lazySections.forEach(section => {
+        observer.observe(section);
+    });
+});
