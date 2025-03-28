@@ -15,16 +15,46 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function (e) {
             const href = this.getAttribute("href");
             if (href === "#top") {
-                e.preventDefault(); 
-                window.scrollTo({ top: 0, behavior: "smooth" }); 
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            } else if (href === "#vptour") {
+                e.preventDefault();
+                document.querySelector('#vptour').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            } else if (href === "#PDFinteractif") {
+                    e.preventDefault();
+                    document.querySelector('#PDFinteractif').scrollIntoView({
+                        behavior: 'smooth'
+                });
+            } else if (href === "#MockupsCD") {
+                    e.preventDefault();
+                    document.querySelector('#MockupsCD').scrollIntoView({
+                        behavior: 'smooth'
+                });
+            } else if (href === "#Blender") {
+                    e.preventDefault();
+                    document.querySelector('#Blender').scrollIntoView({
+                        behavior: 'smooth'
+                });
+            } else if (href === "#wireframes") {
+                    e.preventDefault();
+                    document.querySelector('#wireframes').scrollIntoView({
+                        behavior: 'smooth'
+                });
+            } else if (href === "#rubtext") {
+                    e.preventDefault();
+                    document.querySelector('#rubtext').scrollIntoView({
+                        behavior: 'smooth'
+                });
             } else if (href.startsWith("mailto:")) {
-                
+                return;
             } else {
-                e.preventDefault(); 
+                e.preventDefault();
                 document.body.style.opacity = 0;
-                document.body.style.transform = "ease-in-out"; 
+                document.body.style.transform = "ease-in-out";
                 setTimeout(() => {
-                    window.location.href = href; 
+                    window.location.href = href;
                 }, 500);
             }
         });
@@ -52,11 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once it's visible
+                observer.unobserve(entry.target); 
             }
         });
     }, {
-        threshold: 0.1 // Trigger when 10% of the section is visible
+        threshold: 0.1 
     });
 
     lazySections.forEach(section => {
