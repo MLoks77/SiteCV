@@ -13,8 +13,36 @@ hr {
 }
 
 .extra-space {
-    height: 150px; 
+    height: 80px; 
 }
+
+.boutonfleche {
+    display: flex;
+    justify-content: center;
+}
+
+.boutonfleche a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #12142b;
+    border-radius: 5px;
+    border: whitesmoke 1px solid;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 150px; /* Fixe une largeur uniforme pour tous les boutons */
+}
+
+.boutonfleche a:hover {
+    background-color: #313656;
+}
+
+.boutonfleche a:active {
+    scale: 0.95;
+}
+
 .source-code-pro-big {
     font-family: "Source Code Pro", monospace;
     font-weight: 600;
