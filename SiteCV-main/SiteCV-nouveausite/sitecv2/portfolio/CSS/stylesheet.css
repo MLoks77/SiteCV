@@ -432,6 +432,7 @@ hr {
 
 .contenu-texte2 {
     text-align: left;
+    margin-left: 100px;
 }
 
 .contenu-texte2 h1 {
@@ -457,14 +458,15 @@ hr {
 }
 
 
-/* Ajustement des images dans les cartes */
+
 .container2 {
+    
     display: flex;
-    flex-wrap: nowrap; /* Empêche les cartes de passer à la ligne */
-    overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
-    gap: 20px; /* Espace entre les cartes */
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+    gap: 20px; 
     padding: 10px;
-    scroll-snap-type: x mandatory; /* Active le snap scrolling */
+    scroll-snap-type: x mandatory; 
     overflow: auto;
     display: flex;
     scroll-snap-type: x mandatory;
@@ -474,9 +476,9 @@ hr {
 }
 
 .card2 {
-    flex: 0 0 auto; /* Empêche les cartes de s'étirer */
-    width: 250px; /* Largeur fixe des cartes */
-    height: 250px; /* Hauteur fixe des cartes */
+    flex: 0 0 auto; 
+    width: 250px; 
+    height: 250px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,7 +488,7 @@ hr {
     -webkit-backdrop-filter: blur(7px);
     border-radius: 10px;
     padding: 10px;
-    scroll-snap-align: center; /* Aligne les cartes au centre lors du défilement */
+    scroll-snap-align: center;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(7px);
@@ -497,10 +499,10 @@ hr {
 }
 
 .card2 img {
-    max-width: 100%; /* L'image occupe toute la largeur de la carte */
-    max-height: 100%; /* L'image occupe toute la hauteur de la carte */
-    object-fit: cover; /* Ajuste l'image pour remplir la carte sans déformation */
-    border-radius: 8px; /* Coins arrondis pour les images */
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px; 
 }
 
 .title2 {
@@ -607,7 +609,38 @@ hr {
     height: 10%;
 }
 
+.boutonfleche {
+    display: flex;
+    justify-content: center;
+}
+
+.boutonfleche a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #12142b;
+    border-radius: 5px;
+    border: whitesmoke 1px solid;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 150px; /* Fixe une largeur uniforme pour tous les boutons */
+}
+
+.boutonfleche a:hover {
+    background-color: #313656;
+}
+
+.boutonfleche a:active {
+    scale: 0.95;
+}
+
 @media (max-width: 768px) {
+
+    .contenu-texte2 {
+        margin-left: 30px;
+    }
 
     .card2 {
         width: 200px; /* Réduit la largeur des cartes sur petits écrans */
