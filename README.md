@@ -31,5 +31,7 @@ Mon CV ;
 - ajout d'hyperliens
 - AJout d'effets
 
+29+30/03 - ajouts de boutons interactifs, afin de naviguer
+
 ![image](https://github.com/user-attachments/assets/aadb89ee-9f6b-4e42-acf3-e9b651f36405)
 
