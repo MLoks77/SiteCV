@@ -13,7 +13,6 @@ Mon CV ;
 
 - HTML ,
 - CSS ,
-- PHP ,
 - JAVASCRIPT;
 
 <h2>HISTORIQUE</h2>
