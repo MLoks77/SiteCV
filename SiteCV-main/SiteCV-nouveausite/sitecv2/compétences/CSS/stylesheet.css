@@ -37,6 +37,78 @@ hr {
     transform: translateY(0);
 }
 
+.CV a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #22263f;
+    border-radius: 10px;
+    border: whitesmoke 1px solid;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.cv-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.cv-buttons .btn {
+    flex: 1; 
+    max-width: 200px;
+    text-align: center;
+}
+
+
+.CV a:hover {
+    background-color: #a9b0ff;
+}
+
+.CV a:active {
+    scale: 0.95;
+}
+
+.CV {
+    background-color: rgb(0, 0, 0);
+    border : 1px solid #12142b;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 0 10px 5px #2f3364, 0 0 30px 10px rgba(26, 28, 59, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.CV p {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    color : white;
+    margin : auto;
+
+}
+
+.CV h1 {
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5em;
+    color : white;
+}
+
 /* Button Styles */
 .boutonfleche {
     display: flex;
@@ -573,6 +645,16 @@ hr {
 }
 
 @media (max-width: 768px) {
+
+    .cv-buttons {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .cv-buttons .btn {
+        max-width: Auto; 
+        width: 100%;
+    }
 
     .timeline h2 {
         font-size: 28px;
