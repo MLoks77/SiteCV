@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.querySelector('#rubtext').scrollIntoView({
                         behavior: 'smooth'
                 });
+            } else if (href === "#mode") {
+                    e.preventDefault();
+                    document.querySelector('#mode').scrollIntoView({
+                        behavior: 'smooth'
+                });
             } else if (href.startsWith("mailto:")) {
                 return;
             } else {
