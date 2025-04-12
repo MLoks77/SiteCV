@@ -17,6 +17,10 @@ hr {
     height: 50px;
 }
 
+.extra-space25 {
+    height: 25px;
+}
+
 .lazy-section {
     opacity: 0;
     transform: translateY(20px);
@@ -241,8 +245,7 @@ hr {
     margin-top: auto;
     margin-bottom: auto;
     background-color: #f2f2f2;
-    box-shadow: #000000 5px 5px 5px;
-    border-radius: 10px;
+
     overflow: hidden;
     padding-bottom: 5%;
 
@@ -649,6 +652,7 @@ hr {
     .top ul {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .droite {
