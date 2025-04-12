@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", function (e) {
+            if (this.target === "_blank") return;
             const href = this.getAttribute("href");
             if (href === "#top") {
                 e.preventDefault();
