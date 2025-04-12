@@ -1,0 +1,705 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #12142b;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(59, 46, 107, 0.75), rgba(0, 0, 0, 0));
+}
+
+.extra-space {
+    height: 50px;
+}
+
+.extra-space25 {
+    height: 25px;
+}
+
+.lazy-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.lazy-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.source-code-pro-big {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.big-shoulders-inline-big {
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.top a {
+    font-family: "Big Shoulders Inline", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 28px;
+}
+
+.active a {
+    border-bottom: solid 1px white;
+}
+
+.top a:hover {
+    border:#1b1b1b solid ;
+    border-radius: 5%;
+    box-shadow: 2px 2px #080808;
+    border-width: 1px;
+    font-size: 29px;
+    transition: 0.3s ease-in-out;
+}
+
+.top a:not(:hover) {
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.droite a {
+    font-size: 20px; 
+}
+
+.droite a:hover {
+    color: aliceblue;
+    font-size: 20px; 
+}
+
+.top li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px white;
+    border: 20px white;
+}
+
+.top ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    border-top: solid 15px;
+    border-bottom: solid 15px;
+    gap: 5%;
+    position: relative;
+}
+
+.droite {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.top ul > li > a:hover {
+    font-size: 34px;
+    transition: 0.3s ease-in-out;
+}
+
+.top ul > li > a:not(:hover) {
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.top {
+    box-shadow: 1px 1px 1px 1px #252525;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+}
+
+.footer {
+    background-color: #000000;
+    font-family: "Big Shoulders Inline", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.footer .mt-3 {
+    margin-top: 1rem;
+}
+
+.footer .mt-12 {
+    margin-top: 3rem;
+}
+
+.footer .btn {
+    background-color: #12142b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.footer .btn:hover {
+    background-color: #3b3f6e;
+}
+
+.footer .fa {
+    margin-right: 5px;
+}
+
+.textepres {
+    font-style: normal;
+    font-weight: lighter;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.textepres p {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    display: block;
+    text-align: left;
+    font-size: 30px;
+    white-space: normal;
+    max-width: 100%;
+    margin: auto;
+}
+
+.textepres h1 {
+    text-align: left;
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.cadretext {
+
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #f2f2f2;
+
+    overflow: hidden;
+    padding-bottom: 5%;
+
+
+}
+
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+  }
+
+  .item a {
+    text-decoration: none;
+  }
+
+  .card p {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+  }
+
+  .card h1 {
+    font-family:  "Big Shoulders Inline", sans-serif;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+    border-radius: 8px;
+  }
+  
+  .slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+  }
+  .slider .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+  }
+  .slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    right: 100%;
+    animation: autoRun 15s linear infinite;
+    transition: filter 1s;
+    animation-delay: calc(
+      (15s / var(--quantity)) * (var(--position) - 1) - 15s
+    ) !important;
+  }
+  .slider .list .item img {
+    width: 100%;
+  }
+  @keyframes autoRun {
+    from {
+      right: 100%;
+    }
+    to {
+      right: calc(var(--width) * -1);
+    }
+  }
+  .slider:hover .item {
+    animation-play-state: paused !important;
+    filter: grayscale(1);
+  }
+  .slider .item:hover {
+    filter: grayscale(0);
+  }
+  .slider[reverse="true"] .item {
+    animation: reversePlay 10s linear infinite;
+  }
+  @keyframes reversePlay {
+    from {
+      right: calc(var(--width) * -1);
+    }
+    to {
+      right: 100%;
+    }
+  }
+  
+  .contenu-image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .reusable-section {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 20px; 
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenu-image {
+    flex: 0 0 auto; 
+    max-width: 30%; 
+}
+
+.contenu-image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 7px;
+}
+
+.contenu-texte {
+    text-align: left;
+}
+
+.contenu-texte h1 {
+    font-size: 3rem;
+    font-family: "Big Shoulders Inline", sans-serif;
+}
+
+.contenu-texte p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.contenu-texte .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #12142b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.contenu-texte .btn:hover {
+    background-color: #313656;
+}
+
+.contenu-texte .btn:active {
+    scale: 0.95;
+}
+
+.reusable-section2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenu-image2 {
+    flex: 0 0 auto; 
+    max-width: 30%; 
+}
+
+.contenu-image2 img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 7px;
+}
+
+.contenu-texte2 {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.contenu-texte2 h1 {
+    font-size: 3rem;
+    font-family: "Big Shoulders Inline", sans-serif;
+}
+
+.contenu-texte2 p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.contenu-texte2 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #12142b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.container2 {
+    
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+    gap: 20px; 
+    padding: 10px;
+    scroll-snap-type: x mandatory; 
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card2 {
+    flex: 0 0 auto; 
+    width: 250px; 
+    height: 250px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    padding: 10px;
+    scroll-snap-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.card2 img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.title2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Didact Gothic", sans-serif;
+    color: #000;
+    width: 100%;
+    display: inline-block;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.descriptionmoi {
+    width: 100%;
+    height: 100%;
+    --s: 250px; 
+    --c1: #12142b;
+    --c2: #000000;
+  
+    --_g: var(--c2) 4% 14%, var(--c1) 14% 24%, var(--c2) 22% 34%,
+      var(--c1) 34% 44%, var(--c2) 44% 56%, var(--c1) 56% 66%, var(--c2) 66% 76%,
+      var(--c1) 76% 86%, var(--c2) 86% 96%;
+    background: radial-gradient(
+        100% 100% at 100% 0,
+        var(--c1) 4%,
+        var(--_g),
+        #0008 96%,
+        #0000
+      ),
+      radial-gradient(
+          100% 100% at 0 100%,
+          #0000,
+          #0008 4%,
+          var(--_g),
+          var(--c1) 96%
+        )
+        var(--c1);
+    background-size: var(--s) var(--s);
+}
+  
+.descriptionmoi2 {
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border: white 1px solid;
+    box-shadow: 0 0 0 2px #2f3364;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+}
+
+.photomoi img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.descriptiontexte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.descriptiontexte h1 {
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+    color: white;
+    text-align: left;
+}
+
+.descriptiontexte p {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 1.6em; 
+    color: white;
+    text-align: left; 
+}
+
+.annoydog img{
+    margin-top: 1%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 10%;
+    height: 10%;
+}
+
+.boutonfleche {
+    display: flex;
+    justify-content: center;
+}
+
+.boutonfleche a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #12142b;
+    border-radius: 5px;
+    border: whitesmoke 1px solid;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 150px; /* Fixe une largeur uniforme pour tous les boutons */
+}
+
+.boutonfleche a:hover {
+    background-color: #313656;
+}
+
+.boutonfleche a:active {
+    scale: 0.95;
+}
+
+@media (max-width: 768px) {
+
+    .contenu-texte2 {
+        margin-left: 30px;
+    }
+
+    .card2 {
+        width: 200px; /* Réduit la largeur des cartes sur petits écrans */
+        height: 200px; /* Réduit la hauteur des cartes sur petits écrans */
+    }
+    .top ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .droite {
+        position: static;
+        margin: 10px 0 0 0;
+        justify-content: center;
+    }
+
+    .droite a {
+        font-size: 18px;
+    }
+
+    .textepres p {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .reusable-section {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .contenu-image, .contenu-texte {
+        max-width: 100%; 
+    }
+
+    .contenu-texte h1 {
+        font-size: 1.5rem;
+    }
+
+    .contenu-texte p {
+        font-size: 0.9rem;
+    }
+
+    .contenu-texte2 .btn {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .descriptiontexte p {
+        font-size: 1.2em; 
+    }
+    .descriptiontexte h1 {
+        font-size: 2em;
+    }
+    .photomoi img {
+        max-width: 100%; 
+        height: auto;
+    }
+}
