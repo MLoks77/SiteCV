@@ -6,16 +6,16 @@ Ce site mettra en valeur mes connaissances et des projets sur lequels j'ai déj�
 <h2>3 Rubriques</h2>
 
 Mes Hobbys ,
-Mes plus gros projets ,
+Mon portfolio ,
+Mon parcours
 Mon CV ;
+
 
 <h2>réalisé en</h2>
 
 - HTML ,
 - CSS ,
 - JAVASCRIPT;
-
-29+30/03 - ajouts de boutons interactifs, afin de naviguer
 
 ![image](https://github.com/user-attachments/assets/aadb89ee-9f6b-4e42-acf3-e9b651f36405)
 
