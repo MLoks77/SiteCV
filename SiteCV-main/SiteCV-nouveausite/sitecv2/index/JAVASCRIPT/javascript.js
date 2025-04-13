@@ -24,34 +24,34 @@ document.addEventListener("DOMContentLoaded", function () {
                     behavior: 'smooth'
                 });
             } else if (href === "#PDFinteractif") {
-                    e.preventDefault();
-                    document.querySelector('#PDFinteractif').scrollIntoView({
-                        behavior: 'smooth'
+                e.preventDefault();
+                document.querySelector('#PDFinteractif').scrollIntoView({
+                    behavior: 'smooth'
                 });
             } else if (href === "#MockupsCD") {
-                    e.preventDefault();
-                    document.querySelector('#MockupsCD').scrollIntoView({
-                        behavior: 'smooth'
+                e.preventDefault();
+                document.querySelector('#MockupsCD').scrollIntoView({
+                    behavior: 'smooth'
                 });
             } else if (href === "#Blender") {
-                    e.preventDefault();
-                    document.querySelector('#Blender').scrollIntoView({
-                        behavior: 'smooth'
+                e.preventDefault();
+                document.querySelector('#Blender').scrollIntoView({
+                    behavior: 'smooth'
                 });
             } else if (href === "#wireframes") {
-                    e.preventDefault();
-                    document.querySelector('#wireframes').scrollIntoView({
-                        behavior: 'smooth'
+                e.preventDefault();
+                document.querySelector('#wireframes').scrollIntoView({
+                    behavior: 'smooth'
                 });
             } else if (href === "#rubtext") {
-                    e.preventDefault();
-                    document.querySelector('#rubtext').scrollIntoView({
-                        behavior: 'smooth'
+                e.preventDefault();
+                document.querySelector('#rubtext').scrollIntoView({
+                    behavior: 'smooth'
                 });
             } else if (href === "#mode") {
-                    e.preventDefault();
-                    document.querySelector('#mode').scrollIntoView({
-                        behavior: 'smooth'
+                e.preventDefault();
+                document.querySelector('#mode').scrollIntoView({
+                    behavior: 'smooth'
                 });
             } else if (href.startsWith("mailto:")) {
                 return;
@@ -98,4 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
     lazySections.forEach(section => {
         observer.observe(section);
     });
+});
+
+window.addEventListener("pageshow", function () {
+    document.body.style.opacity = 1;
+    document.body.style.transform = "scale(1)";
 });
