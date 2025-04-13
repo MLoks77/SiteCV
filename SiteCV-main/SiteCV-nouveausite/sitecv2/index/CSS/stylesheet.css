@@ -8,6 +8,10 @@ body {
     line-height: 1.5;
 }
 
+meta {
+    display : none;
+}
+
 hr {
     border: 0;
     height: 1px;
