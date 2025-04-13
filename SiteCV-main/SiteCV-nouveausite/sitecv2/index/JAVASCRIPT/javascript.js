@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        alert("Attention : Ce site n'est pas encore entièrement adapté aux appareils mobiles. Pour une meilleure expérience, veuillez utiliser un ordinateur.");
+    }
+
     document.querySelectorAll('.scrollToTop').forEach(function(element) {
         element.addEventListener('click', function(event) {
             event.preventDefault();

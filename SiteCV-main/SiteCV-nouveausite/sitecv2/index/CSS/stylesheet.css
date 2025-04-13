@@ -4,6 +4,8 @@ body {
     background-color: #12142b;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 hr {
@@ -573,66 +575,131 @@ hr {
     margin: auto;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 768px) {
 
-    .cv-buttons {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .cv-buttons .btn {
-        max-width: Auto; 
-        width: 100%;
-    }
-
-    .descriptionmoi2{
-        display: flex;
+    .top ul {
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .top ul > li > a {
+        font-size: 18px;
+    }
+
+    .droite {
+        position: static;
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .droite a {
+        font-size: 16px;
     }
 
     .box-infos {
         flex-direction: column;
         align-items: center;
-        gap: 5%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-
-    .infos {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 1%;
-        margin-top: 2%;
-        flex: none;
-    }
-
-    .infos p {
-        text-align: center;
-        font-family: "Source Code Pro", monospace;
-        font-weight: 600;
-        font-size: large;
-        color: white;
-    }
-
-    .top ul {
-        flex-direction: column;
-        align-items: center;
         gap: 20px;
     }
 
-    .droite {
-        position: static;
-        margin: 10px 0 0 0;
-        justify-content: center;
+    .infos {
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .droite a {
-        font-size: 18px;
+    .infos h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .infos p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .textepres {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .textepres h1 {
+        font-size: 2em;
+        text-align: center;
     }
 
     .textepres p {
-        text-align: left;
-        font-size: 20px;
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    .CV {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+    }
+
+    .CV h1 {
+        font-size: 2em;
+    }
+
+    .cv-buttons {
+        flex-direction: column; 
+        gap: 10px; 
+        width: 100%; 
+    }
+
+    .cv-buttons .btn {
+        width: 90%; 
+        max-width: none;
+        margin: 0 auto; 
+        box-sizing: border-box; 
+    }
+
+    .descriptionmoi2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photomoi img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .descriptiontexte {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .descriptiontexte h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .descriptiontexte p {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    .animated-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer .column {
+        margin-bottom: 20px;
+    }
+
+    .footer h5 {
+        font-size: 1.2em;
+    }
+
+    .footer p, .footer a {
+        font-size: 0.9em;
     }
 }
