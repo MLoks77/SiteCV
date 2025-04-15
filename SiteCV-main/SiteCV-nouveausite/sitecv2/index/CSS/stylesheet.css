@@ -581,6 +581,13 @@ hr {
 
 @media (max-width: 768px) {
 
+    body {
+        font-size: 32px; 
+        line-height: 1.4;
+        background-color: #10122a;
+        padding: 10px; 
+      }
+
     .top ul {
         flex-direction: column;
         align-items: center;

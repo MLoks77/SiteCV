@@ -386,7 +386,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     
-    background-color: #ffd885;
+    background-color: #bdcaff;
     padding: 20px;
     border-radius: 10px;
     border : 1px solid white;
@@ -397,7 +397,7 @@ hr {
 
 .Categorie2  {
         
-    background-color: #dda6ff;
+    background-color: #bdcaff;
     padding: 20px;
     border-radius: 10px;
     border : 1px solid white;
@@ -408,7 +408,7 @@ hr {
 
 .Categorie3  {
         
-    background-color: #564de0;
+    background-color: #bdcaff;
     padding: 20px;
     border-radius: 10px;
     border : 1px solid white;
@@ -419,7 +419,7 @@ hr {
 
 .Categorie4  {
    
-    background-color: #436e5a;
+    background-color: #bdcaff;
     padding: 20px;
     border-radius: 10px;
     border : 1px solid white;
