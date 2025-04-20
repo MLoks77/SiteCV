@@ -1,0 +1,5 @@
+# Exemple de fichier robots.txt
+
+# Autoriser tous les robots à explorer toutes les pages
+User-agent: *
+Disallow:
