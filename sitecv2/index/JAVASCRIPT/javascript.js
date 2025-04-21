@@ -23,41 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (href === "#top") {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: "smooth" });
-            } else if (href === "#vptour") {
-                e.preventDefault();
-                document.querySelector('#vptour').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            } else if (href === "#PDFinteractif") {
-                e.preventDefault();
-                document.querySelector('#PDFinteractif').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            } else if (href === "#MockupsCD") {
-                e.preventDefault();
-                document.querySelector('#MockupsCD').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            } else if (href === "#Blender") {
-                e.preventDefault();
-                document.querySelector('#Blender').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            } else if (href === "#wireframes") {
-                e.preventDefault();
-                document.querySelector('#wireframes').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            } else if (href === "#rubtext") {
-                e.preventDefault();
-                document.querySelector('#rubtext').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            } else if (href === "#mode") {
-                e.preventDefault();
-                document.querySelector('#mode').scrollIntoView({
-                    behavior: 'smooth'
-                });
             } else if (href.startsWith("mailto:")) {
                 return;
             } else {
