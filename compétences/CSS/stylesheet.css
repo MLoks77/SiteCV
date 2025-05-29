@@ -650,11 +650,72 @@ meta {
 .sections-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 32px;
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-  }
+    margin-bottom: 40px;
+}
+
+.competence-block {
+    background: #f8f8fa;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(18,20,43,0.06);
+    padding: 24px 32px;
+    min-width: 280px;
+    flex: 1 1 320px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.competence-block h1 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+    color: #12142b;
+    text-align: center;
+}
+
+.competence-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+
+.competence-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(18,20,43,0.07);
+    padding: 16px 12px 10px 12px;
+    min-width: 90px;
+    max-width: 110px;
+    text-decoration: none;
+    color: #12142b;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.competence-card img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.competence-card span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.competence-card:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(18,20,43,0.13);
+    background: #f0f2fa;
+    color: #2a2d5a;
+}
 
 .langages a,
 .logiciels a {
