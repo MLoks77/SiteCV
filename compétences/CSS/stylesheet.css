@@ -715,73 +715,128 @@ meta {
   }
 
 @media (max-width: 768px) {
+  .sections-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-    .sections-container {
-        flex-direction: column;
-        align-items: center;
-      }
+  .langages, .logiciels, .langues {
+    width: 90%;
+    max-width: none;
+    margin: 10px 0;
+  }
 
-    .cv-buttons {
-        flex-direction: column; 
-        align-items: center; 
-    }
+  .langages h1, .logiciels h1, .langues h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 
-    .cv-buttons .btn {
-        max-width: Auto; 
-        width: 100%;
-    }
+  .langages li, .logiciels li, .langues li {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
 
-    .timeline h2 {
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 15px;
-    }
+  .tableauskills {
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+  }
 
-    .timeline h3 {
-        font-family: "Didact Gothic", sans-serif;
-        font-size: 20px;
-        color: #292c4e;
-        text-align: center;
-        margin-bottom: 8px;
-        text-transform: capitalize;
-        letter-spacing: 0.8px;
-    }
+  .tableauskills h1 {
+    font-size: 40px;
+  }
 
-    .tableauskills {
-        padding: 15px;
-    }
+  .tableau th, .tableau td {
+    padding: 8px;
+    font-size: 14px;
+  }
 
-    .tableau th, .tableau td {
-        font-size: 16px;
-        padding: 10px;
-    }
+  .timeline {
+    padding: 20px 30px;
+  }
 
-    .tableauskills h1 {
-        font-size: 28px;
-    }
+  .timeline article {
+    width: 100%;
+    margin-left: 0 !important;
+  }
 
-    .top ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  .timeline article:before {
+    left: -30px !important;
+  }
 
-    .droite {
-        position: static;
-        margin: 10px 0 0 0;
-        justify-content: center;
-    }
+  .timeline article:after {
+    display: none;
+  }
 
-    .droite a {
-        font-size: 18px;
-    }
+  .timeline:after {
+    left: 0;
+  }
 
-    .textepres p {
-        text-align: left;
-        font-size: 20px;
-    }
+  .timeline h2 {
+    font-size: 24px;
+  }
 
-    .textepres h1 {
-        font-size: 50px;
-    }
+  .timeline h3 {
+    font-size: 20px;
+  }
+
+  .btn-site {
+    width: 100%;
+    text-align: center;
+  }
+
+  .CV {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .CV h1 {
+    font-size: 2em;
+  }
+
+  .cv-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cv-buttons .btn {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .langages h1, .logiciels h1, .langues h1 {
+    font-size: 24px;
+  }
+
+  .langages li, .logiciels li, .langues li {
+    font-size: 0.8em;
+  }
+
+  .tableauskills h1 {
+    font-size: 32px;
+  }
+
+  .tableau th, .tableau td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .timeline {
+    padding: 15px 20px;
+  }
+
+  .timeline h2 {
+    font-size: 20px;
+  }
+
+  .timeline h3 {
+    font-size: 16px;
+  }
+
+  .CV h1 {
+    font-size: 1.8em;
+  }
 }

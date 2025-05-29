@@ -580,7 +580,6 @@ hr {
 }
 
 @media (max-width: 768px) {
-
     .top ul {
         flex-direction: column;
         align-items: center;
@@ -604,23 +603,22 @@ hr {
 
     .box-infos {
         flex-direction: column;
-        align-items: center;
         gap: 20px;
+        margin: 10px;
     }
 
     .infos {
         width: 90%;
         margin: 0 auto;
+        padding: 15px;
     }
 
     .infos h2 {
-        font-size: 1.5em;
-        text-align: center;
+        font-size: 1.8em;
     }
 
     .infos p {
         font-size: 1em;
-        text-align: center;
     }
 
     .textepres {
@@ -639,9 +637,8 @@ hr {
     }
 
     .CV {
-        margin-left: 5%;
-        margin-right: 5%;
-        padding: 10px;
+        margin: 10px;
+        padding: 15px;
     }
 
     .CV h1 {
@@ -651,42 +648,43 @@ hr {
     .cv-buttons {
         flex-direction: column; 
         gap: 10px; 
-        width: 100%; 
     }
 
     .cv-buttons .btn {
-        width: 90%; 
+        width: 100%; 
         max-width: none;
-        margin: 0 auto; 
-        box-sizing: border-box; 
     }
 
     .descriptionmoi2 {
         flex-direction: column;
-        align-items: center;
+        padding: 15px;
     }
 
     .photomoi img {
-        max-width: 100%;
-        height: auto;
+        max-width: 200px;
+        margin: 0 auto 20px;
     }
 
     .descriptiontexte {
-        margin: 0;
-        padding: 10px;
+        padding: 0;
     }
 
     .descriptiontexte h1 {
-        font-size: 1.8em;
+        font-size: 2em;
         text-align: center;
     }
 
     .descriptiontexte p {
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: justify;
     }
 
+    .annoydog img {
+        width: 15%;
+    }
+
     .animated-button {
+        width: 100%;
         padding: 12px 24px;
         font-size: 14px;
     }
@@ -704,6 +702,45 @@ hr {
     }
 
     .footer p, .footer a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .infos h2 {
+        font-size: 1.5em;
+    }
+
+    .infos p {
+        font-size: 0.9em;
+    }
+
+    .animated-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .descriptiontexte h1 {
+        font-size: 1.8em;
+    }
+
+    .descriptiontexte p {
+        font-size: 1em;
+    }
+
+    .photomoi img {
+        max-width: 150px;
+    }
+
+    .annoydog img {
+        width: 20%;
+    }
+
+    .CV h1 {
+        font-size: 1.8em;
+    }
+
+    .CV p {
         font-size: 0.9em;
     }
 }

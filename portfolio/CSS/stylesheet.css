@@ -518,9 +518,6 @@ hr {
   }
 
 @media (max-width: 768px) {
-
-
-
     .pro-item-a {
         font-size: 0.8rem;
         padding: 5px 10px;
@@ -576,4 +573,374 @@ hr {
         max-width: 100%; 
         height: auto;
     }
+}
+
+/* Portfolio Container */
+.portfolio-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Filtres */
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #12142b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.filter-btn:hover {
+  background: #313656;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: #4a4f8f;
+  box-shadow: 0 0 15px rgba(74, 79, 143, 0.5);
+}
+
+/* Grille de projets */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Cartes de projet */
+.project-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  margin: 0 0 10px 0;
+  font-family: "Big Shoulders Inline", sans-serif;
+  color: #12142b;
+}
+
+.project-info p {
+  margin: 0 0 15px 0;
+  color: #666;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  padding: 8px 15px;
+  background: #12142b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: #313656;
+}
+
+/* Pop-up */
+.project-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.project-popup.active {
+  opacity: 1;
+}
+
+.popup-content {
+  background: white;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+.project-popup.active .popup-content {
+  transform: scale(1);
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(18, 20, 43, 0.9);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close-popup:hover {
+  background: #313656;
+  transform: rotate(90deg);
+}
+
+.popup-header {
+  padding: 25px;
+  background: #12142b;
+  color: white;
+  position: relative;
+}
+
+.popup-header h2 {
+  margin: 0;
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.popup-body {
+  padding: 30px;
+  overflow-y: auto;
+  max-height: calc(90vh - 150px);
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-images {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.slider-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(18, 20, 43, 0.9);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.slider-arrow:hover {
+  background: #313656;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-arrow.prev {
+  left: 15px;
+}
+
+.slider-arrow.next {
+  right: 15px;
+}
+
+.project-details {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.project-description {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  padding: 10px 20px;
+  background: #12142b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-link:hover {
+  background: #313656;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .project-popup {
+    padding: 10px;
+  }
+
+  .popup-content {
+    width: 95%;
+    max-height: 95vh;
+  }
+
+  .popup-header {
+    padding: 20px;
+  }
+
+  .popup-header h2 {
+    font-size: 1.5em;
+  }
+
+  .popup-body {
+    padding: 20px;
+  }
+
+  .slider-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .project-details {
+    padding: 15px;
+  }
+
+  .project-description {
+    font-size: 1em;
+  }
+
+  .project-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-container {
+    margin: 10px 5px;
+    padding: 5px;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-info h3 {
+    font-size: 1.1em;
+  }
+
+  .project-info p {
+    font-size: 0.8em;
+  }
+
+  .popup-header h2 {
+    font-size: 1.3em;
+  }
+
+  .textepres h1 {
+    font-size: 40px;
+  }
+
+  .textepres p {
+    font-size: 18px;
+  }
 }
