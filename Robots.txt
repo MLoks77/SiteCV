@@ -2,4 +2,14 @@
 
 # Autoriser tous les robots à explorer toutes les pages
 User-agent: *
-Disallow:
+Disallow: https://maxime-derènes.fr/index/doc/CV_DERENES_MAXIME.jpg
+Disallow: https://maxime-derènes.fr/index/doc/DERENES_MAXIME.pdf
+Disallow: https://maxime-derènes.fr/index/doc/DERENES_MAXIME_CV.pdf
+Disallow: https://maxime-derènes.fr/portfolio/IMAGES/mockupfanart.png
+Disallow: https://maxime-derènes.fr/portfolio/IMAGES/mockupfanart.png
+Disallow: https://maxime-derènes.fr/portfolio/IMAGES/PosterSeigneurdesanneaux.png
+Disallow: https://maxime-derènes.fr/portfolio/IMAGES/PosterSeigneurdesanneauxsansdate.png
+Disallow: https://maxime-derènes.fr/portfolio/IMAGES/Afficheasterix.png
+Disallow: https://maxime-derènes.fr/portfolio/IMAGES/AfficheBurgerpetit.png
+Disallow: https://maxime-derènes.fr/portfolio/IMAGES/mode.png
+Disallow: https://maxime-derènes.fr/portfolio/doc/mode.png
