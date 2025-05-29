@@ -1,0 +1,165 @@
+/* Styles pour le pop-up */
+.project-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    width: 600px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    z-index: 10000;
+    padding: 5px;
+    line-height: 1;
+}
+
+.close-popup:hover {
+    color: #000;
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.popup-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.popup-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.popup-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.popup-links a {
+    padding: 8px 16px;
+    background-color: #12142b;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.popup-links a:hover {
+    background-color: #2a2d5a;
+}
+
+/* Styles pour les filtres */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 14px 32px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color : black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.filter-btn.active {
+    background-color: #12142b;
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: #12142b;
+    color: white;
+}
+
+/* Grille de projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.project-info p {
+    margin: 0 0 15px 0;
+    color: #666;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-link {
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #2a2d5a;
+} 
